@@ -1,0 +1,26 @@
+{
+  "name": "zero_trust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node shared/seed.js",
+    "gateway": "node gateway/index.js",
+    "nilai": "node services/nilai/index.js",
+    "transkrip": "node services/transkrip/index.js",
+    "setup": "node scripts/setup-env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "http-proxy-middleware": "^3.0.7",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
